@@ -12,7 +12,7 @@ const Slideshow = ({ images }) => {
   };
 
   useEffect(() => {
-    // Auto-advance to the next slide every 3 seconds
+    // Pour aller a la prochaine image toutes les 3 secondes, vous pouvez ajouter une option qui arrete la slide une fois la derniere image afficher par exemple.
     const interval = setInterval(nextSlide, 3000);
 
     return () => clearInterval(interval);
@@ -27,7 +27,7 @@ const Slideshow = ({ images }) => {
   );
 };
 
-// Exemple d'utilisation :
+// Exemple url d'images:
 const imagesList = [
   'url_de_l_image_1.jpg',
   'url_de_l_image_2.jpg',
